@@ -1,35 +1,32 @@
 import React from "react";
 
-import HomeContainer from "../components/UIelements/HomeContainer";
 import HomeHeader from "../components/UIelements/HomeHeader";
 import Container from "../components/UIelements/Container";
-import Text from "../components/typograph/Text";
-import MeProfile from "../../src/assets/image/Me.png";
+import Profile from "../../src/assets/image/Me.png";
 
 const Home = () => {
   return (
     <React.Fragment>
       <HomeHeader />
-      <HomeContainer>
-        <Container direction={"col"}>
-          <Text bold={"bold"} heigth={"loose"} size={"5xl"}>
-            HEY I'M RICK LUCENA, AN FULLSTACK DEVELOPER AND A CREATIVE FIGMA
-            UI/UX DESIGNER
-          </Text>
-          <ul className="flex w-full justify-start gap-10 py-3">
-            <li>Developer</li>
+      <Container>
+        <section className="border border-red-500 h-96 p-5 w-full">
+          <h1>
+            HEY, I"M RICK RAMOS, A WEB DEVELOPER AND CREATIVE UI/UX DESIGN
+          </h1>
+          <ul>
+            <li>Frontend Developer</li>
             <li>Figma Designer</li>
-            <li>MERN Stack</li>
+            <li>Fullstack</li>
           </ul>
           <nav>
-            <button>Want to Disscuss ?</button>
-            <button>Let's Talk</button>
+            <button>Want to work together?</button>
+            <span>Let's Talk</span>
           </nav>
-        </Container>
-        <Container content={"center"}>
-          <img src={MeProfile} alt="" />
-        </Container>
-      </HomeContainer>
+        </section>
+        <section className="border border-red-500 h-96 p-5 w-full flex justify-center">
+          <img src={Profile} alt="" />
+        </section>
+      </Container>
     </React.Fragment>
   );
 };
