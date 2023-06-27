@@ -10,15 +10,15 @@ const VariableWidth = ({ children }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     variableWidth: true,
-    //adaptiveHeight: true
+    adaptiveHeight: true,
 
     //autoplay?
-    dots: true,
-    infinite: true,
-    autoplay: true,
-    speed: 15000,
-    autoplaySpeed: 1000,
-    cssEase: "linear"
+    //dots: true,
+    //infinite: true,
+    //autoplay: true,
+    //speed: 15000,
+    //autoplaySpeed: 1000,
+    //cssEase: "linear"
   };
 
   return (

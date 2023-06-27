@@ -2,14 +2,15 @@ import Testimg from "../../assets/image/teste.jpg";
 
 const ItemWork = ({ title, link, description }) => {
   const styles = {
-    width: "100%",
-    height: "100%",
+    width: "330px",
+    height: "200px",
   };
   return (
-    <section className="my-19 h-64 text-left m-5 ">
+    <section className="my-19 h-64 text-left mx-5 ">
       <img style={styles} src={Testimg} alt="" />
-      <h3>{title}</h3>
-    </section>
+        <h3>{title}</h3>
+        <hr className="bg-red-500 h-1 mt-2" />
+      </section>
   );
 };
 
