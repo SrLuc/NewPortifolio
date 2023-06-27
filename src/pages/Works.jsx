@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import ItemWork from "../components/UIelements/ItemWork";
+import VariableWidth from "../components/carousel/Carousel";
 
 const Works = () => {
   const [works, setWorks] = useState([]);
@@ -15,19 +16,19 @@ const Works = () => {
   }, []);
 
   return (
-    <section className="flex flex-wrap justify-around p-5">
-      {works.map(({ name, html_url, description, language }) => {
-        return (
-          <ItemWork
-            key={name}
-            title={name}
-            link={html_url}
-            description={description}
-            language={language}
-          />
-        );
-      })}
-    </section>
+    <VariableWidth>
+        {works.map(({ name, html_url, description, language }) => {
+          return (
+            <ItemWork
+              key={name}
+              title={name}
+              link={html_url}
+              description={description}
+              language={language}
+            />
+          );
+        })}
+    </VariableWidth>
   );
 };
 
