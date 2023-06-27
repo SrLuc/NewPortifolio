@@ -20,7 +20,6 @@ function App() {
         <Route path="/works" Component={Works} exact />
         <Route path="/contact" Component={Contact} exact />
       </Routes>
-      <NavigationFooter />
     </BrowserRouter>
   );
 }
