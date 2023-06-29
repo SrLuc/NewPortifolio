@@ -1,5 +1,6 @@
 import Container from "../components/UIelements/Container";
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contacts = () => {
   const [name, setName] = useState("");
@@ -8,7 +9,6 @@ const Contacts = () => {
 
   function sendEmail(e) {
     e.preventDefault();
-    alert("Message Sent");
 
     if (name === "" || email === "" || message === "") {
       alert("Please fill out all fields");
@@ -19,6 +19,17 @@ const Contacts = () => {
       email: email,
       message: message,
     };
+
+    emailjs
+      .send("service_9texmlj", "template_yunr4zh", params, "K6OhDY2Z3GnXyxoVv")
+      .then((response) => {
+        console.log(response, response.status, response.text);
+        alert("Message Sent");
+        setName("");
+        setEmail("");
+        setMessage("");
+      })
+      .catch((err) => console.log(err));
   }
 
   return (
