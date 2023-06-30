@@ -35,11 +35,11 @@ const Contacts = () => {
   return (
     <React.Fragment>
       <Container>
-        <section className="border flex w-full h-96">
+        <section className=" flex w-full h-96">
           <p>image</p>
         </section>
         <section className=" flex flex-col justify-center items-center w-full h-96">
-          <form className="border flex flex-col" onSubmit={sendEmail}>
+          <form className=" flex flex-col" onSubmit={sendEmail}>
             <input
               type="text"
               className=""
@@ -63,7 +63,7 @@ const Contacts = () => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             />
-            <span className="border">
+            <span className="">
               <button type="submit">Contact Me</button>
             </span>
           </form>

@@ -1,15 +1,20 @@
 import React from "react";
-
-import HomeHeader from "../components/UIelements/HomeHeader";
 import Container from "../components/UIelements/Container";
 import Profile from "../../src/assets/image/Me.png";
+import {
+  PrimaryButton,
+  SecondaryButton,
+} from "../components/UIelements/Buttons";
 
-const Home = ({name}) => {
+const Home = ({ name }) => {
   return (
-    <React.Fragment>
-      <HomeHeader name={name}/>
+    <>
+      <header className="flex justify-between p-5 bg-[#D9D9D9]">
+        <h2 className="font-bold text-2xl text-[#132D46]">Hello {name}</h2>
+        <PrimaryButton>Contact Me</PrimaryButton>
+      </header>
       <Container>
-        <section className="border border-red-500 h-96 p-5 w-full">
+        <section className="h-96 p-5 w-full">
           <h1>
             HEY, I"M RICK RAMOS, A WEB DEVELOPER AND CREATIVE UI/UX DESIGN
           </h1>
@@ -23,11 +28,11 @@ const Home = ({name}) => {
             <span>Let's Talk</span>
           </nav>
         </section>
-        <section className="border border-red-500 h-96 p-5 w-full flex justify-center">
+        <section className="h-96 p-5 w-full flex justify-center">
           <img src={Profile} alt="" />
         </section>
       </Container>
-    </React.Fragment>
+    </>
   );
 };
 

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
   return (
-    <nav className="border">
+    <nav>
       <ul className="flex justify-evenly p-5">
         <Link to="/">Skills</Link>
         <Link to="/about">About</Link>
