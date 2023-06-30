@@ -1,12 +1,12 @@
 const Login = ({ handleFormSubmit }) => {
-  const handleSubmit = (e) => {
-    const teste = e.target.name.value;
-    handleFormSubmit(teste);
+  const handleForm = (e) => {
+    const name = e.target.name.value;
+    handleFormSubmit(name);
   };
 
   return (
     <section>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleForm}>
         <input type="text" name="name" id="name" />
         <input type="submit" value="Enviar" />
       </form>

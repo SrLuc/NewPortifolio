@@ -15,7 +15,7 @@ function App() {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [name, setName] = useState("");
 
-  const handle = (nameValue) => {
+  const handleFormSubmit = (nameValue) => {
     //alteras os estados
     setIsLogged(true);
     setIsFormSubmitted(true);
@@ -23,11 +23,11 @@ function App() {
   };
 
   if (!isFormSubmitted) {
-    return <Login handleFormSubmit={handle} />;
+    return <Login handleFormSubmit={handleFormSubmit} />;
   } else {
     return (
       <BrowserRouter>
-        <Home name={name} />
+        <Home name={name} /> 
         <NavigationBar />
         <Routes>
           <Route path="/" Component={Skills} exact />
