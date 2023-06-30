@@ -4,10 +4,10 @@ import HomeHeader from "../components/UIelements/HomeHeader";
 import Container from "../components/UIelements/Container";
 import Profile from "../../src/assets/image/Me.png";
 
-const Home = () => {
+const Home = ({name}) => {
   return (
     <React.Fragment>
-      <HomeHeader />
+      <HomeHeader name={name}/>
       <Container>
         <section className="border border-red-500 h-96 p-5 w-full">
           <h1>
