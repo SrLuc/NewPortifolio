@@ -7,7 +7,11 @@ const PrimaryButton = ({ children }) => {
 };
 
 const SecondaryButton = ({ children }) => {
-  return <button>{children}</button>;
+  return (
+    <button className="border-4 border-[#191E29] text-[#191E29] border- font-bold p-1 px-3 shadow-sm hover:bg-[#C0FF00] transition">
+      {children}
+    </button>
+  );
 };
 
 export { PrimaryButton, SecondaryButton };
