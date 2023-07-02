@@ -2,15 +2,21 @@ import Testimg from "../../assets/image/teste.jpg";
 
 const ItemWork = ({ title, link, description }) => {
   const styles = {
-    width: "330px",
-    height: "200px",
+    width: "430px",
+    height: "320px",
+    objectFit: "cover",
+    objectPosition: "center",
+    padding: "5px 0",
+
   };
   return (
-    <section className="my-19 h-64 text-left mx-5 ">
-      <img style={styles} src={Testimg} alt="" />
-        <h3>{title}</h3>
-        <hr className="bg-red-500 h-1 mt-2" />
-      </section>
+    <section className="text-left mx-2 ">
+      <a target="_blank" href={link}>
+        <img style={styles} src={Testimg} alt="" />
+        <h3 className="font-bold text-[#132D46]">{title}</h3>
+        <hr className="bg-[#C0FF00] h-1 mt-1" />
+      </a>
+    </section>
   );
 };
 
