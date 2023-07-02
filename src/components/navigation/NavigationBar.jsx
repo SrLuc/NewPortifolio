@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
   return (
-    <nav>
-      <ul className="flex justify-evenly p-5">
+    <nav className="bg-[#191E29] font-bold text-gray-100 h-full p-5" >
+      <ul className="flex justify-around ">
         <Link to="/">Skills</Link>
         <Link to="/about">About</Link>
         <Link to="/works">Works</Link>

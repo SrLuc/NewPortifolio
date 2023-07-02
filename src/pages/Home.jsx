@@ -21,7 +21,7 @@ const Home = ({ name }) => {
           <h1 className="font-bold text-[#132D46] lg:text-6xl lg:leading-normal lg:text-left md:text-4xl md:text-left md:leading-loose sm:text-2xl sm:text-center sm:leading-normal min-[315px]:text-center text-3xl">
             HEY, I"M RICK RAMOS, A WEB DEVELOPER AND CREATIVE UI/UX DESIGN
           </h1>
-          <ul className="flex gap-5 py-2 font-bold text-[#132D46] lg:justify-start md:justify-start sm:justify-center min-[400px]:flex justify-center">
+          <ul className="flex gap-5 py-2 font-bold text-[#132D46] lg:justify-start md:justify-start sm:justify-center min-[400px]:flex justify-center text-center">
             <li>Frontend Student</li>
             <li>Figma Designer</li>
             <li>Fullstack Developer</li>
