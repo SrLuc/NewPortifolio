@@ -26,19 +26,21 @@ function App() {
     return <Login handleFormSubmit={handleFormSubmit} />;
   } else {
     return (
-      <BrowserRouter>
-        <Home name={name} /> 
-        <NavigationBar />
-        <Routes>
-          <Route path="/" Component={Skills} exact />
-          <Route path="/about" Component={About} exact />
-          <Route path="/works" Component={Works} exact />
-          <Route path="/contact" Component={Contact} exact />
-        </Routes>
-      </BrowserRouter>
+      <>
+        <BrowserRouter>
+          <Home name={name} />
+          <NavigationBar />
+          <Routes>
+            <Route path="/" Component={Skills} exact />
+            <Route path="/about" Component={About} exact />
+            <Route path="/works" Component={Works} exact />
+            <Route path="/contact" Component={Contact} exact />
+          </Routes>
+        </BrowserRouter>
+        <NavigationFooter />
+      </>
     );
   }
 }
-
 
 export default App;

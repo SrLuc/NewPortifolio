@@ -7,12 +7,10 @@ import {SiTailwindcss} from "react-icons/si";
 import {RiEnglishInput} from "react-icons/ri";
 import ItemSkill from "../components/UIelements/ItemSkill";
 
-
-
 const Skills = () => {
   return (
     <>
-      <section className="flex justify-around p-1 w-full h-full align-middle flex-wrap min-[440px]:p-2">
+      <section className="flex justify-around my-6 w-full h-full align-middle flex-wrap min-[440px]:p-2">
         <ItemSkill icon={<GrReactjs size={25}/>} title="ReactJS">
           I have solid ReactJS skills, with experience building reusable
           components, managing state, and integrating with external APIs. I also

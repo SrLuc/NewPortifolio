@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 const NavigationFooter = () => {
   return (
-    <nav>
-      <ul className="flex justify-evenly p-5">
-        <a href="">icon</a>
-        <a href="">icon</a>
-        <a href="">icon</a>
+    <nav className="bg-[#191E29]">
+      <ul className="flex justify-evenly p-5 font-bold text-white">
+        <a href="">linkedin</a>
+        <a href="">github</a>
+        <a href="">instagram</a>
       </ul>
     </nav>
   );
