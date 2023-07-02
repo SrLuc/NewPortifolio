@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Oculta a barra de rolagem */
+::-webkit-scrollbar {
+  width: 0;
+  background-color: transparent;
+}
+
+/* Oculta as setas de rolagem */
+::-webkit-scrollbar-thumb {
+  display: none;
+}
