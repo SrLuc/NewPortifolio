@@ -11,7 +11,7 @@ const VariableWidth = ({ children }) => {
     slidesToScroll: 1,
     variableWidth: true,
     adaptiveHeight: true,
-    arrows:false,
+    arrows: false,
 
     //autoplay:true,
     //dots: true,
@@ -23,7 +23,7 @@ const VariableWidth = ({ children }) => {
   };
 
   return (
-    <div className="py-3 bg-[#D9D9D9]">
+    <div className="py-8 bg-[#D9D9D9]">
       <Slider {...settings}>{children}</Slider>
     </div>
   );
