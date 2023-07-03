@@ -7,8 +7,8 @@ import Slider from "react-slick";
 const VariableWidth = ({ children }) => {
   const settings = {
     className: "slider variable-width",
-    slidesToShow: 1,
-    slidesToScroll: 3,
+    slidesToShow: 3,
+    slidesToScroll: 1,
     variableWidth: true,
     adaptiveHeight: true,
     arrows: false,

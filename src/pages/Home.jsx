@@ -32,9 +32,9 @@ const Home = ({ name }) => {
             <SecondaryButton>
               <Link to="/about">More about me?</Link>
             </SecondaryButton>
-            <PrimaryButton>
+            <TernaryButton>
               <Link to="/contact">Let's Talk</Link>
-            </PrimaryButton>
+            </TernaryButton>
           </ul>
         </section>
         <section className="h-96 p-5 w-full flex justify-center">

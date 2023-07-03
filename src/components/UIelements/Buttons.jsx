@@ -30,7 +30,7 @@ const TernaryButton = ({ children }) => {
 
   return (
     <ScrollLink
-      className="bg-[#C0FF00] text-[#191E29] font-bold text-2xl p-1 px-3 shadow-sm"
+    className="bg-[#C0FF00] text-[#191E29] font-bold text-2xl p-1 px-3 shadow-sm"
       activeClass="active"
       to="section1"
       spy={true}
