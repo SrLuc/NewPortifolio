@@ -27,7 +27,7 @@ const ItemWork = ({ title, link, description }) => {
     <section className="text-left mx-5 hvr-shrink">
       <a target="_blank" href={link}>
         <img style={styles} src={randomImage} alt={title} />
-        <h3 className="font-bold text-[#132D46]">{title}</h3>
+        <h3 className="font-bold text-[#132D46] text-lg">{title}</h3>
         <hr className="bg-[#C0FF00] h-1 mt-1" />
       </a>
     </section>

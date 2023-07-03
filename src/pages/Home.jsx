@@ -11,8 +11,8 @@ import {
 const Home = ({ name }) => {
   return (
     <>
-      <header className="flex justify-between p-5 bg-[#D9D9D9]">
-        <h2 className="font-bold text-2xl text-[#132D46]">Hello {name}</h2>
+      <header className="flex justify-between p-3 bg-[#D9D9D9]">
+        <h2 className="font-bold text-3xl text-[#132D46]">Hello {name}</h2>
         <TernaryButton>
           <Link to="/contact">Contact Me</Link>
         </TernaryButton>
@@ -29,8 +29,12 @@ const Home = ({ name }) => {
             <li>Web Development Student</li>
           </ul>
           <ul className="flex text-center py-3 gap-5 lg:justify-start md:justify-start sm:justify-center min-[400px]:flex justify-center">
-            <SecondaryButton>Want to work together?</SecondaryButton>
-            <PrimaryButton>Let's Talk</PrimaryButton>
+            <SecondaryButton>
+              <Link to="/about">More about me?</Link>
+            </SecondaryButton>
+            <PrimaryButton>
+              <Link to="/contact">Let's Talk</Link>
+            </PrimaryButton>
           </ul>
         </section>
         <section className="h-96 p-5 w-full flex justify-center">

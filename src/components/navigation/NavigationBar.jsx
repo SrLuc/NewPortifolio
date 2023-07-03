@@ -18,7 +18,7 @@ const NavigationBar = () => {
   const location = useLocation();
 
   return (
-    <nav className="bg-[#191E29] font-bold text-gray-100 h-full p-5">
+    <nav className="bg-[#191E29] font-bold text-gray-100 text-xl h-full p-5">
       <ul className="flex justify-around shadow-lg">
         <NavItem to="/" selected={location.pathname === "/"}>
           Skills

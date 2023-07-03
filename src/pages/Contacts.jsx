@@ -37,6 +37,9 @@ const Contacts = () => {
   return (
     <React.Fragment>
       <Container>
+        <section className="w-full flex justify-center p-3 ">
+          <Frame />
+        </section>
         <section className="w-full">
           <form
             className="flex flex-col justify-evenly h-full xl:pl-12 lg:pl-12 md:pl-12 sm:p-12 min-[315px]:p-6"
@@ -65,13 +68,10 @@ const Contacts = () => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             />
-            <span className="mt-5 xl:text-left lg:text-left md:text-left sm:text-center min-[315px]:text-center">
+            <span className="mt-5 xl:text-right lg:text-right md:text-right sm:text-center min-[315px]:text-center">
               <SecondaryButton type="submit">Contact Me</SecondaryButton>
             </span>
           </form>
-        </section>
-        <section className="w-full flex justify-center p-3 ">
-          <Frame />
         </section>
       </Container>
     </React.Fragment>
