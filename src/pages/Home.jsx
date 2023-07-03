@@ -5,6 +5,7 @@ import Profile from "../../src/assets/image/Me.png";
 import {
   PrimaryButton,
   SecondaryButton,
+  TernaryButton,
 } from "../components/UIelements/Buttons";
 
 const Home = ({ name }) => {
@@ -12,9 +13,9 @@ const Home = ({ name }) => {
     <>
       <header className="flex justify-between p-5 bg-[#D9D9D9]">
         <h2 className="font-bold text-2xl text-[#132D46]">Hello {name}</h2>
-        <PrimaryButton>
+        <TernaryButton>
           <Link to="/contact">Contact Me</Link>
-        </PrimaryButton>
+        </TernaryButton>
       </header>
       <Container>
         <section className="p-5 w-full">

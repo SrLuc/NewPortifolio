@@ -48,7 +48,7 @@ const Contacts = () => {
               placeholder="Personal Name or Company Name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-            />ya
+            />
             <hr className="h-1 bg-[#191e29]" />
             <input
               type="email"
