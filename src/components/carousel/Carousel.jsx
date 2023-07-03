@@ -14,7 +14,7 @@ const VariableWidth = ({ children }) => {
     arrows: false,
 
     //autoplay:true,
-    //dots: true,
+    dots: true,
     //infinite: true,
     //autoplay: true,
     //speed: 15000,
