@@ -10,6 +10,8 @@ Well, if you're interested in getting to know me a little more... my Portfolio d
 
 This portfolio contains links that will take you to my Linkedin and Instagram..
 
+By the way, it is worth remembering that this portfolio is fully Responsive, that is, its components respond well on any type of device that will access it 😁
+
 In addition, this project contains a form that will make direct contact with my email address, do not hesitate to do so 😝
 
 
