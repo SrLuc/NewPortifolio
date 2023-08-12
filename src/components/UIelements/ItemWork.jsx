@@ -17,13 +17,13 @@ const ItemWork = ({ title, link, description }) => {
 
   return (
     <section className="text-left mx-5 hvr-shrink">
-      <a target="_blank" href={link}>
+      <a target="_blank">
         <img
           className="xl:w-96 xl:h-80 lg:w-96 lg:h-80 md:w-96 md:h-80 sm:w-96 sm:h-80 min-[380px]:w-96 min-[380px]:h-80 min-[310px]:w-80 min-[310px]:h-72 object-cover object-center mt-3 "
           src={randomImage}
           alt={title}
         />
-        <h3 className="font-bold text-[#132D46] text-lg">{title}</h3>
+        <h3 className="font-bold text-[#132D46] text-lg pt-2">{title}</h3>
         <hr className="bg-[#C0FF00] h-1 mt-1" />
       </a>
     </section>

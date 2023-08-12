@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-
 import ItemWork from "../components/UIelements/ItemWork";
 import VariableWidth from "../components/carousel/Carousel";
+import TransitionsModal from "../components/Modal/TransitionsModal";
 
 const Works = () => {
   const [works, setWorks] = useState([]);
@@ -19,13 +19,7 @@ const Works = () => {
     <VariableWidth>
         {works.map(({ name, html_url, description, language }) => {
           return (
-            <ItemWork
-              key={name}
-              title={name}
-              link={html_url}
-              description={description}
-              language={language}
-            />
+            <TransitionsModal name={name} description={description} language={language} html_url={html_url}/>
           );
         })}
     </VariableWidth>
