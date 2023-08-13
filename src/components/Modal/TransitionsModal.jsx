@@ -57,8 +57,10 @@ const TransitionsModal = ({ name, html_url, description, language }) => {
                 <p>
                   Language Most Used: <strong>{language}</strong>
                 </p>
-                <a href={html_url} className="py-2 ">
-                  <p className="text-[#191E29] font-bold text-lg hover:text-[#C0FF00]">Go to repository</p>
+                <a href={html_url} target="_blank" className="py-2 ">
+                  <p className="text-[#191E29] font-bold text-lg hover:text-[#C0FF00]">
+                    Go to repository
+                  </p>
                 </a>
               </section>
             </Typography>

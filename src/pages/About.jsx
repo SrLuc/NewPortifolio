@@ -17,7 +17,7 @@ const About = () => {
               development, with frontend skills, looking for professional
               opportunities in the area. Interested in pursuing a career in
               fullstack web developer or mobile programming using
-              <strong> React Native</strong> or <strong>Flutter</strong>, with a
+              <strong> ReactJs</strong> and <strong>NodeJS</strong>, with a
               focus on creating full-featured apps or developing for mobile
               devices. I am committed to continually learning and improving
               skills, I am also building an online portfolio and participating
