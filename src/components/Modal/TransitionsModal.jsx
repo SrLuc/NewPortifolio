@@ -6,6 +6,11 @@ import Fade from "@mui/material/Fade";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import ItemWork from "../UIelements/ItemWork";
+import {
+  PrimaryButton,
+  SecondaryButton,
+  TernaryButton,
+} from "../UIelements/Buttons";
 
 const style = {
   position: "absolute",
@@ -14,7 +19,7 @@ const style = {
   transform: "translate(-50%, -50%)",
   width: 400,
   bgcolor: "background.paper",
-  border: "2px solid #000",
+  border: "1px solid #000",
   boxShadow: 24,
   p: 4,
 };
@@ -27,7 +32,7 @@ const TransitionsModal = ({ name, html_url, description, language }) => {
   return (
     <div>
       <Button onClick={handleOpen}>
-        <ItemWork title={name.toLowerCase()}  />
+        <ItemWork title={name.toLowerCase()} />
       </Button>
       <Modal
         aria-labelledby="transition-modal-title"
@@ -48,7 +53,14 @@ const TransitionsModal = ({ name, html_url, description, language }) => {
               {description}
             </Typography>
             <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-              {language}
+              <section className="flex flex-col">
+                <p>
+                  Language Most Used: <strong>{language}</strong>
+                </p>
+                <a href={html_url} className="py-2 ">
+                  <p className="text-[#191E29] font-bold text-lg hover:text-[#C0FF00]">Go to repository</p>
+                </a>
+              </section>
             </Typography>
           </Box>
         </Fade>
