@@ -24,7 +24,13 @@ const style = {
   p: 4,
 };
 
-const TransitionsModal = ({ name, html_url, description, language }) => {
+const TransitionsModal = ({
+  name,
+  html_url,
+  description,
+  language,
+  homepage,
+}) => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -53,15 +59,24 @@ const TransitionsModal = ({ name, html_url, description, language }) => {
               {description}
             </Typography>
             <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-              <section className="flex flex-col">
+              <section className="flex flex-col items-center">
                 <p>
-                  Language Most Used: <strong>{language}</strong>
+                  Language: <strong>{language}</strong>
                 </p>
-                <a href={html_url} target="_blank" className="py-2 ">
-                  <p className="text-[#191E29] font-bold text-lg hover:text-[#C0FF00]">
+                <a href={html_url} target="_blank" className="">
+                  <p className="text-[#191E29] font-bold text-lg m-1 hover:text-[#C0FF00] ">
                     Go to repository
                   </p>
                 </a>
+                {homepage ? (
+                  <a
+                    className="m-1 text-[#191E29] font-bold text-lg hover:text-[#C0FF00]"
+                    href={homepage}
+                    target="_blank"
+                  >
+                    Go to website
+                  </a>
+                ) : null}
               </section>
             </Typography>
           </Box>
