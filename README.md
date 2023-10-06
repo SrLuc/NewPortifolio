@@ -39,4 +39,4 @@ In addition, this project follows good programming practices, using the ES6 synt
 I used the Surge.sh to make Deploy for this application..
 Enjoy!😎
 
-https://ruanportifolio.surge.sh/
+https://portifolioruanramos.surge.sh/
