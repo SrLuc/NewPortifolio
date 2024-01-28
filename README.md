@@ -3,6 +3,8 @@
 
 Welcome to my portfolio!
 
+https://new-portifolio-livid.vercel.app/
+
 Here you can learn more about me and my programming skills.
 I am happy to share my professional journey and present how I can add value to the projects I participate in.
 
@@ -39,4 +41,4 @@ In addition, this project follows good programming practices, using the ES6 synt
 I used the Surge.sh to make Deploy for this application..
 Enjoy!😎
 
-https://portifolioruanramos.surge.sh/
+https://new-portifolio-livid.vercel.app/
