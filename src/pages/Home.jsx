@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Container from "../components/UIelements/Container";
-import Profile from "../../src/assets/image/Me.png";
+import Profile from "../../src/assets/Image/Me.png";
 import {
   PrimaryButton,
   SecondaryButton,
